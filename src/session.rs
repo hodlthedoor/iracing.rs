@@ -300,13 +300,13 @@ pub struct Driver {
     pub i_rating: i64,
 
     #[serde(rename = "LicLevel")]
-    pub license_level: i64,
+    pub license_level: Option<i64>,
 
     #[serde(rename = "LicSubLevel")]
-    pub license_sub_level: i64,
+    pub license_sub_level: Option<i64>,
 
     #[serde(rename = "LicString")]
-    pub license: String,
+    pub license: Option<String>,
 
     pub is_spectator: i8, // Is Specator?
 
